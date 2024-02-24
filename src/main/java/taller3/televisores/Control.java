@@ -4,6 +4,7 @@ public class Control {
 	protected TV tv;
 	//enlazar
 	public void enlazar(TV tv) {
+		this.tv=tv;
 		tv.setControl(this);
 	}
 	//control remoto turn on y off
