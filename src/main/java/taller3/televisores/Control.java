@@ -1,7 +1,7 @@
 package taller3.televisores;
 
 public class Control {
-	private TV tv;
+	protected TV tv;
 	public void turnOff() {
 		tv.turnOff();
 	}
@@ -26,13 +26,15 @@ public class Control {
 	public void setVolumen(int num) {
 		tv.setVolumen(num);
 	}
-	public void enlazar(TV tele) {
-		tv= tele;
+	public void enlazar(TV tv) {
+		this.tv= tv;
+		tv.control= this;
 	}
 	public TV getTv() {
 		return tv;
 	}
 	public void setTv(TV tv) {
 		this.tv=tv;
+		tv.control=this;
 	}
 }
