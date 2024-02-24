@@ -30,7 +30,7 @@ public class TV {
 	public void setControl(Control control) {
 		this.control=control;
 	}
-	public void setNumTV(int num) {
+	public static void setNumTV(int num) {
 		numTV= num;
 	}
 	public Marca getMarca() {
@@ -48,7 +48,7 @@ public class TV {
 	public Control getControl() {
 		return control;
 	}
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	public void turnOn() {
