@@ -77,23 +77,23 @@ public class TV {
 	}
 	//Metodos de cambio de canal
 	public void canalUp() {
-		if(estado==true && canal<121 && canal>0) {
-			canal +=1;
+		if(estado && canal<120) {
+			canal ++;
 		}
 	}
 	public void canalDown() {
-		if(estado==true && canal<121 && canal>0) {
-			canal -=1;
+		if(estado && canal>1) {
+			canal --;
 		}
 	}
 	//metodo cambio de volumen
 	public void volumenUp() {
-		if(estado==true && volumen<8 && volumen>0) {
+		if(estado && volumen<7) {
 			volumen+=1;
 		}
 	}
 	public void volumenDown() {
-		if(estado==true && volumen<8 && volumen>0) {
+		if(estado && volumen>0) {
 			volumen-=1;
 		}
 	}
