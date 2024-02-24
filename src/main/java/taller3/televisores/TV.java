@@ -45,7 +45,7 @@ public class TV {
 	}
 	//Metodo get y set canal
 	public void setCanal(int canal) {
-		if(estado && canal<121 && canal>0) {
+		if(estado==true && canal<121 && canal>0) {
 			this.canal=canal;
 		}
 	}
@@ -54,7 +54,7 @@ public class TV {
 	}
 	//metodo get y set volumen
 	public void setVolumen(int volumen) {
-		if(estado && volumen<8 && volumen>0) {
+		if(estado==true && volumen<8 && volumen>0) {
 			this.volumen=volumen;
 		}
 	}
@@ -77,23 +77,23 @@ public class TV {
 	}
 	//Metodos de cambio de canal
 	public void canalUp() {
-		if(estado && canal<120 && canal>0) {
+		if(estado==true && canal<121 && canal>0) {
 			canal +=1;
 		}
 	}
 	public void canalDown() {
-		if(estado && canal<120 && canal>0) {
+		if(estado==true && canal<121 && canal>0) {
 			canal -=1;
 		}
 	}
 	//metodo cambio de volumen
 	public void volumenUp() {
-		if(estado && volumen<7 && volumen>0) {
+		if(estado==true && volumen<8 && volumen>0) {
 			volumen+=1;
 		}
 	}
 	public void volumenDown() {
-		if(estado && volumen<7 && volumen>0) {
+		if(estado==true && volumen<8 && volumen>0) {
 			volumen-=1;
 		}
 	}
